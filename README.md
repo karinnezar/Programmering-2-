@@ -1,46 +1,61 @@
-# Template för PROG2 Inlupp 1 och 2
+# PathFinder – Java
 
-## Instruktioner
+Project Description
 
-Instruktioner finns i iLearn
+PathFinder is a Java-based graphical application for creating, managing and exploring maps using graph data structures.
 
-## Bygg och testa Inlupp 1 och kör Inlupp 2
+The application allows users to add locations to a map, create connections between them, and find routes between selected locations. Each connection can have a name and a travel time, allowing the application to calculate the total travel time for a route.
 
-```bash
+Features
+
+Add and manage locations on a map
+
+Create connections between locations with names and travel times
+
+Select two locations and find a path between them
+
+Calculate the total travel time between locations
+
+View and modify connection details
+
+Save and load map data
+
+Export maps as image files
+
+Load different map backgrounds
+
+Technologies & Concepts
+
+Java
+
+JavaFX
+
+Maven
+
+Object-Oriented Programming (OOP)
+
+Graph data structures
+
+Graph traversal and pathfinding
+
+Event handling
+
+File handling and data persistence
+
+Graphical User Interface (GUI)
+
+Project Structure
+
+backend/ – Graph interfaces, graph implementation and edge management
+
+gui/ – Graphical interface and user interaction
+
+assets/ – Project images and resources
+
+Build and Run
+
+The project uses Maven. To build and test the application, run:
+
 ./mvnw package
-```
 
-(ersätt `./mvnw` med `mvnw.bat` på Windows`
-
-För att testa JavaFX innan Inlupp 1 är klar:
-
-```bash
-./mvnw package -Dmaven.test.skip
-```
-
-## Bygg och testa enbart Inlupp 1
-
-```bash
-./mvnw compile test -pl backend
-```
-
-## Importera i din editor
-
-### Intellij IDEA
-
-Välj File -> New -> Project From Version Control och skriv in https://-url:n
-till det här repot.
-
-![Intellij Idea import](assets/idea.png)
-
-Det finns tre bygg/kör alternativ. Klicka på dem för att köra projektet.
-
-### Visual Studio Code
-
-Klicka på Clone Repository och fyll i https://-url:n till det här repot.
-
-![Visual Studio Code import](assets/vscode.png)
-
-Kör genom att klicka på Terminal -> Run Build Task...
-
-Testa Inlupp 1 genom att klicka på test under Maven -> backend.
+Java 21 is required.
